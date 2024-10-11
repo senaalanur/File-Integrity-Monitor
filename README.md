@@ -13,9 +13,12 @@ User-friendly GUI for easy file management.
 Code Review:
 
 1. GUI: gui.py allows users to add files for monitoring and start monitoring with buttons.
-2. Email Alerts: email_alerts.py sends alerts using a Flask application context.
-3. File Monitoring: file_monitor.py hashes files to detect changes and manages a JSON file to keep track of monitored files.
-4. Configuration: files_to_monitor.json keeps a list of files and their hashes.
+2. 
+3. Email Alerts: email_alerts.py sends alerts using a Flask application context.
+4. 
+5. File Monitoring: file_monitor.py hashes files to detect changes and manages a JSON file to keep track of monitored files.
+6. 
+7. Configuration: files_to_monitor.json keeps a list of files and their hashes.
 
 Achievements:
 

@@ -6,9 +6,9 @@ The File Integrity Monitor is a tool designed to track specified files for modif
 
 Features:
 
-*Monitors selected files for changes.
-*Sends email notifications on modifications or deletions.
-*User-friendly GUI for easy file management.
+Monitors selected files for changes.
+Sends email notifications on modifications or deletions.
+User-friendly GUI for easy file management.
 
 Code Review:
 
@@ -19,8 +19,9 @@ Code Review:
 
 Achievements:
 
-* Email Notification: Successfully implemented email alerts for file modifications and deletions.
-* User-Friendly Interface: Created a GUI that simplifies adding and monitoring files.
+Email Notification: Successfully implemented email alerts for file modifications and deletions.
+
+User-Friendly Interface: Created a GUI that simplifies adding and monitoring files.
 
 Next Steps:
 
@@ -36,6 +37,6 @@ Contributions are welcome! Please feel free to fork this repository and submit p
 
 Additional Resources:
 
-*Flask Documentation = https://flask-mail.readthedocs.io/en/latest/ 
-*Watchdog Documentation = https://watchdog.readthedocs.io/en/latest/
-*PyQt5 Documentation = PyQt5 Documentation
+Flask Documentation = https://flask-mail.readthedocs.io/en/latest/ 
+Watchdog Documentation = https://watchdog.readthedocs.io/en/latest/
+PyQt5 Documentation = PyQt5 Documentation

@@ -1,0 +1,5 @@
+{
+    "/path/to/your/file1.txt": "hash1",
+    "/path/to/your/file2.txt": "hash2",
+    "/Users/senaalanur/PycharmProjects/FileIntegrityMonitor/file2.txt": "d8068139313e9f6a7d269742f1c48155a0ef1950a64bafccacfd6d545c4886c1"
+}

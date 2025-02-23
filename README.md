@@ -1,45 +1,94 @@
-# File-Integrity-Monitor
+# File Integrity Monitor
 
-Project Overview:
+## Overview
 
-The File Integrity Monitor is a tool designed to track specified files for modifications and deletions. The program sends email alerts when changes are detected, helping users ensure the integrity of their important files.
+The File Integrity Monitor is a powerful tool designed to track specified files for modifications and deletions, ensuring the security and integrity of important files. When a change is detected, the program promptly sends an email alert, allowing users to take immediate action. This project is particularly useful for security-conscious users, businesses, and IT administrators who need to safeguard critical files from unauthorized changes.
 
-Features:
+## Purpose & Importance
 
-Monitors selected files for changes.
-Sends email notifications on modifications or deletions.
-User-friendly GUI for easy file management.
+In today's digital world, file integrity is crucial for maintaining data security. Unauthorized modifications, accidental deletions, or malicious alterations can lead to serious consequences, such as data breaches or system failures. The File Integrity Monitor addresses these concerns by continuously tracking file changes and notifying users instantly, helping prevent data loss and unauthorized access.
 
-Code Review:
+### Features
 
-1. GUI: gui.py allows users to add files for monitoring and start monitoring with buttons.
+* Real-time File Monitoring: Tracks changes, deletions, and modifications of specified files.
+
+* Email Alerts: Sends notifications when a file is altered or removed.
+
+* User-Friendly GUI: Built with PyQt5 for an intuitive and accessible interface.
+
+* Customizable Monitoring: Allows users to add, remove, and manage files easily.
+
+* Cross-Platform Compatibility: Designed to work on Windows, Linux, and macOS.
+
+* Logging System: Maintains a log of all detected file changes and notifications.
+
+### Code Breakdown
+
+1. Graphical User Interface (GUI)
+
+   File: gui.py
+
+* Provides an interactive PyQt5-based UI.
+
+* Users can select files for monitoring.
+
+* Includes buttons to start and stop monitoring.
+
+2. File Monitoring System
+
+   File: file_monitor.py
+
+* Uses Watchdog to detect file modifications and deletions.
+
+* Hashes files to identify unauthorized changes.
+
+* Stores monitored file information in a JSON file (files_to_monitor.json).
+
+3. Email Alert System
+
+   File: email_alerts.py
+
+* Sends email notifications using Flask-Mail.
+
+* Runs within a Flask application context to ensure email delivery.
+
+* Notifies users immediately of any detected file changes.
+
+4. Configuration File
+
+   File: files_to_monitor.json
  
-2. Email Alerts: email_alerts.py sends alerts using a Flask application context.
-  
-3. File Monitoring: file_monitor.py hashes files to detect changes and manages a JSON file to keep track of monitored files.
- 
-4. Configuration: files_to_monitor.json keeps a list of files and their hashes.
+* Stores the list of monitored files along with their corresponding hashes.
 
-Achievements:
+Achievements
 
-Email Notification: Successfully implemented email alerts for file modifications and deletions.
+* Real-Time Email Notifications: Successfully implemented an automated email alert system for file modifications and deletions.
+* User-Friendly Interface: Designed an accessible GUI to simplify file monitoring.
+* Data Security Enhancement: Provides an extra layer of security for critical files.
 
-User-Friendly Interface: Created a GUI that simplifies adding and monitoring files.
+### Next Steps
 
-Next Steps:
+1- Enhanced Testing & Validation: Test for multiple scenarios such as monitoring multiple files, handling large file sets, and ensuring stability across different OS platforms.
 
-1.Testing and Validation: Test the application for various use cases, such as adding multiple files, deleting monitored files, etc.
-2.User Preferences: Allow users to customize email recipient preferences within the app.
-3.Logging: Implement a system to log all file changes and email alerts.
-4.Cross-Platform Compatibility: Test the application on multiple operating systems (e.g., Windows, Linux).
-5,Improved GUI: Add features like displaying the current list of monitored files, allowing users to remove files from monitoring, or modify alert settings directly from the GUI.
+2- User Preference Settings: Enable users to configure recipient email addresses and alert preferences within the application.
 
-Contributing:
+3- Advanced Logging: Implement a logging feature to store records of file changes and email notifications.
 
-Contributions are welcome! Please feel free to fork this repository and submit pull requests.
+4- Improved GUI Features: Add real-time status updates, file removal options, and alert customization directly from the UI.
 
-Additional Resources:
+5- Cross-Platform Optimization: Ensure compatibility and smooth operation on Windows, Linux, and macOS.
 
-Flask Documentation = https://flask-mail.readthedocs.io/en/latest/ 
-Watchdog Documentation = https://watchdog.readthedocs.io/en/latest/
-PyQt5 Documentation = PyQt5 Documentation
+#### Contribution 
+
+Contributions are welcome! If you'd like to enhance this project, feel free to fork the repository, make modifications, and submit a pull request.
+
+#### Additional Resources
+
+Flask-Mail Documentation - https://flask-mail.readthedocs.io/en/latest/
+
+Watchdog Documentation - https://watchdog.readthedocs.io/en/latest/
+
+PyQt5 Documentation - https://watchdog.readthedocs.io/en/latest/
+
+#### This project is open-source and available under the MIT License. Feel free to customize and improve it to suit your needs! ###
+
